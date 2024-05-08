@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sam from "./assets/samfullcrop-250.png";
 import {
   Box,
+  Button,
   Checkbox,
   FormControl,
   FormControlLabel,
@@ -12,8 +13,11 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormLabel from "@mui/material/FormLabel";
 
+type SubmitEvent = React.MouseEvent<HTMLButtonElement, MouseEvent> | React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>
+
 export default function Hero() {
   const [enterName, setEnterName] = useState<null | Boolean>(null);
+  const [visitorName, setVisitorName] = useState<string>('')
 
   function handleRadioChange(
     _event: React.ChangeEvent<HTMLInputElement>,
@@ -21,6 +25,10 @@ export default function Hero() {
   ) {
     console.log(value);
     setEnterName(value === "sure");
+  }
+
+  function handleFormSubmission() {
+    console.log(visitorName)
   }
 
   return (
@@ -54,16 +62,17 @@ export default function Hero() {
             <InputLabel htmlFor="my-input">Your name is...</InputLabel>
             <Input
               onChange={(e) => {
-                console.log(e.target.value);
+                setVisitorName(e.target.value);
               }}
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
-                  console.log("enter hit");
+                  handleFormSubmission()
                 }
               }}
               id="my-input"
               aria-describedby="my-helper-text"
             />
+            <Button onClick={handleFormSubmission}>Submit</Button>
           </FormControl>
         )}
       </div>
