@@ -12,12 +12,18 @@ import {
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormLabel from "@mui/material/FormLabel";
-
-type SubmitEvent = React.MouseEvent<HTMLButtonElement, MouseEvent> | React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>
+import { useWindowSize } from "@uidotdev/usehooks";
+import Confetti from "react-confetti";
+type SubmitEvent =
+  | React.MouseEvent<HTMLButtonElement, MouseEvent>
+  | React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>;
 
 export default function Hero() {
   const [enterName, setEnterName] = useState<null | Boolean>(null);
-  const [visitorName, setVisitorName] = useState<string>('')
+  const [visitorName, setVisitorName] = useState<string>("");
+  const [showConfetti, setShowConfetti] = useState<boolean>(false)
+
+  const { width, height } = useWindowSize();
 
   function handleRadioChange(
     _event: React.ChangeEvent<HTMLInputElement>,
@@ -28,11 +34,13 @@ export default function Hero() {
   }
 
   function handleFormSubmission() {
-    console.log(visitorName)
+    setShowConfetti(true)
+    setTimeout(() => setShowConfetti(false), 5000)
   }
 
   return (
     <>
+      {showConfetti && <Confetti width={width as number} height={height as number} />}
       <img src={Sam} alt="Sam and Sookie" />
       <div>
         <p>Hello there! I'm Sam Glass.</p>
@@ -72,7 +80,7 @@ export default function Hero() {
               id="my-input"
               aria-describedby="my-helper-text"
             />
-            <Button onClick={handleFormSubmission}>Submit</Button>
+          <Button variant="text" onClick={handleFormSubmission}>Text</Button>
           </FormControl>
         )}
       </div>
