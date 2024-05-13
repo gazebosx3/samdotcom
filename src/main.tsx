@@ -11,14 +11,12 @@ import {
 import "./index.css";
 import Experience from "./Experience.tsx";
 import About from "./About.tsx";
-import Resume from "./Resume.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<App />} path="/">
       <Route element={<About />} path="About" />
       <Route element={<Experience />} path="Experience" />
-      <Route element={<Resume />} path="Resume" />
     </Route>
   )
 );
