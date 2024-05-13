@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+@media screen and (min-width:500px) {
+  home-style {
+    display: 'flex';
+    justify-content: space-between;
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

@@ -39,7 +39,7 @@ import Home from "./Home.tsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<App />} path="/">
-      <Route index element={<Home />} />
+      {/* <Route index element={<Home />} /> */}
       <Route element={<About />} path="About" />
       <Route element={<Experience />} path="Experience" />
     </Route>
