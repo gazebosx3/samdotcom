@@ -3,14 +3,14 @@ import DrawerAppBar from './Header'
 import {
   Outlet,
 } from "react-router-dom";
+import Home from './Home';
 function App() {
 
   return (
     <>
-    <DrawerAppBar />
-    <Outlet /> 
-      {/* <div>
-      </div> */}
+    <Home />
+    {/* <DrawerAppBar />
+    <Outlet />  */}
     </>
   )
 }
