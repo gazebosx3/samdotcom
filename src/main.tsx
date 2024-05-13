@@ -11,37 +11,14 @@ import {
 import "./index.css";
 import Experience from "./Experience.tsx";
 import About from "./About.tsx";
-import Header from "./Header.tsx";
-import Home from "./Home.tsx";
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App />,
-//     children: [
-//       {
-//         path: "/Home",
-//         element: <Home />,
-//         index: true
-//       },
-//       {
-//         path: "/Experience",
-//         element: <Experience />,
-//       },
-//       {
-//         path: "/About",
-//         element: <About />,
-//       },
-//     ]
-//   },
-// ]);
+import Resume from "./Resume.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<App />} path="/">
-      {/* <Route index element={<Home />} /> */}
       <Route element={<About />} path="About" />
       <Route element={<Experience />} path="Experience" />
+      <Route element={<Resume />} path="Resume" />
     </Route>
   )
 );

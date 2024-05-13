@@ -43,7 +43,9 @@ export default function Home({ isHome }: HomeProps) {
           <Link to={"Experience"}>
             <Button>Experience</Button>
           </Link>
-          <Button>Resume</Button>
+          {/* <Link to={"Resume"}>
+            <Button>Resume</Button>
+          </Link> */}
         </div>
       </Box>
     </div>
