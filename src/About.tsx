@@ -1,11 +1,60 @@
 import React from "react";
+import Typography from "@mui/material/Typography";
 
 export default function About() {
-    return(<>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis eget velit. Mauris a diam maecenas sed enim ut sem viverra aliquet. Amet nisl suscipit adipiscing bibendum est ultricies. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Nibh tellus molestie nunc non. Cras semper auctor neque vitae tempus quam pellentesque. Tincidunt dui ut ornare lectus. Eget mauris pharetra et ultrices. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus. Mauris a diam maecenas sed enim ut sem viverra. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Laoreet id donec ultrices tincidunt arcu. Nisi scelerisque eu ultrices vitae. Tincidunt augue interdum velit euismod in pellentesque. Scelerisque in dictum non consectetur a erat.
-
-Tristique sollicitudin nibh sit amet. Sed cras ornare arcu dui. Ultrices tincidunt arcu non sodales neque. Duis at consectetur lorem donec massa sapien faucibus et molestie. Diam maecenas sed enim ut sem viverra aliquet. Ut etiam sit amet nisl purus in mollis nunc. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Bibendum est ultricies integer quis auctor elit sed. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Congue mauris rhoncus aenean vel elit. Convallis aenean et tortor at risus viverra adipiscing at. Diam sit amet nisl suscipit. Pretium aenean pharetra magna ac.
-
-Neque aliquam vestibulum morbi blandit cursus. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Eget mi proin sed libero enim sed faucibus turpis in. In vitae turpis massa sed elementum tempus. Sit amet nulla facilisi morbi tempus iaculis urna. Bibendum at varius vel pharetra vel turpis nunc eget. Diam in arcu cursus euismod quis viverra nibh cras. Eu sem integer vitae justo eget magna fermentum iaculis eu. Ultrices sagittis orci a scelerisque. Est ullamcorper eget nulla facilisi. Morbi quis commodo odio aenean sed. Integer vitae justo eget magna. Nulla at volutpat diam ut venenatis tellus. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus.
-    </>)
+  return (
+    <>
+      <Typography variant="h5" gutterBottom>
+        Is it too cliche to say "I've always been bad at this stuff" ?
+      </Typography>
+      <Typography variant="h5" gutterBottom>
+        👋
+      </Typography>
+      <Typography align="left" variant="body1" gutterBottom>
+        I'm Sam. I'm a software engineer with six years of professional
+        experience, the majority of which at Bloomberg L.P., but I've also been
+        a part of a small consulting firm, where my favorite project was
+        updating the legacy codebase of one of America's largest barge
+        transportation solutions.
+        <br />
+        <br />
+        <Typography align="center" variant="h6" gutterBottom>
+          🚢
+        </Typography>
+        <br /> Like many developers, I love finding simple but elegent solutions
+        to problems in the service of making software that is performant,
+        intuitive, and error-free. Unlike many developers, I had a whole
+        previous life editing books at HarperCollins and W.W. Norton following a
+        B.A. (graduated a year early!) in English Literature and Medieval and
+        Early Modern Studies from Tulane University.
+        <br />
+        <br />{" "}
+        <Typography align="center" variant="h6" gutterBottom>
+          🏰
+        </Typography>
+        <br />I got bit by the coding bug in 2017 and didn't look back. I'm an
+        incredibly driven and disciplined person, so when I discovered the
+        almost infinite ecosystem of online (and occasionally analog) resources
+        available to learn anything and everything about programming software, I
+        dove right in. My recent work has been on clientside application
+        development and performance, but I love learning about computers all the
+        way up and down the stack: microcontrollers, CPU architecture, operating
+        systems, abstract syntax trees, browsers, the whole shebang.*
+        <br />
+        <br />
+        <Typography align="center" variant="h6" gutterBottom>
+          ✨
+        </Typography>
+        <br />
+        There's not much else, I suppose. I love learning, I love building, and
+        I love people. If you'd like to drop me a line, my email is
+        samuelglass@gmail.com. Looking forward to hearing from you.
+        <br />
+        <br />
+        <Typography variant="caption">
+          *little scripting joke for you
+        </Typography>
+      </Typography>
+    </>
+  );
 }
