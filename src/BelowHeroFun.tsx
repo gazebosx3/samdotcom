@@ -18,7 +18,7 @@ type SubmitEvent =
   | React.MouseEvent<HTMLButtonElement, MouseEvent>
   | React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>;
 
-export default function Hero() {
+export default function BelowHeroFunction() {
   const [enterName, setEnterName] = useState<null | Boolean>(null);
   const [visitorName, setVisitorName] = useState<string>("");
   const [showConfetti, setShowConfetti] = useState<boolean>(false)
@@ -41,9 +41,7 @@ export default function Hero() {
   return (
     <>
       {showConfetti && <Confetti width={width as number} height={height as number} />}
-      <img src={Sam} alt="Sam and Sookie" />
       <div>
-        <p>Hello there! I'm Sam Glass.</p>
         <Box>
           <FormControl>
             <FormLabel id="demo-row-radio-buttons-group-label">
