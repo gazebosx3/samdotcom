@@ -1,15 +1,80 @@
-import React from "react";
+import { List, ListItem } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 export default function Experience() {
-    return(<>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non consectetur a erat nam at lectus urna duis. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Mauris in aliquam sem fringilla. Egestas maecenas pharetra convallis posuere morbi leo. Tellus at urna condimentum mattis pellentesque id nibh tortor. At augue eget arcu dictum varius duis at consectetur lorem. Tristique senectus et netus et malesuada fames ac. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Sociis natoque penatibus et magnis dis parturient. At volutpat diam ut venenatis. Ipsum a arcu cursus vitae congue mauris. Quisque egestas diam in arcu cursus euismod. Vitae aliquet nec ullamcorper sit amet risus. Cras adipiscing enim eu turpis egestas pretium aenean.
+  return (
+    <>
+      <List sx={{ listStyleType: "disc" }}>
+        <ListItem sx={{ display: "list-item" }}>
+          Responsible for architecting and leading development of voice memo
+          capabilities in Bloomberg’s instant messenger
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Decreased memory footprint and latency of proprietary tabular data
+          calculation platform responsible for delivering 3-5 million messages
+          per day with 100% accuracy
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Developed node.js CLI tool for instrumenting applications with
+          Bloomberg’s SLO monitoring solution
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Led initiative to improve observability in Grafana with a focus on
+          “Four Golden Signals” from the Google SRE handbook
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Collaborated closely with UX, product, and backend teams to ensure
+          intuitive and performant recording, sending, and playback of audio
+          clips
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Analyzed and fixed performance issues reported by clients in NYC,
+          London, and Hong Kong using Chrome Dev Tools (flamegraphs and heap
+          snapshots) and other proprietary performance inspection tooling
+        </ListItem>
 
-Est ante in nibh mauris cursus mattis molestie a iaculis. Aliquet risus feugiat in ante metus dictum at. Neque laoreet suspendisse interdum consectetur libero. In fermentum posuere urna nec tincidunt praesent semper. Enim lobortis scelerisque fermentum dui faucibus in ornare. Pellentesque id nibh tortor id aliquet. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Vel turpis nunc eget lorem dolor sed. Pellentesque id nibh tortor id aliquet lectus proin. Feugiat vivamus at augue eget arcu. Id donec ultrices tincidunt arcu non sodales. Eros donec ac odio tempor orci dapibus ultrices in iaculis. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Eleifend quam adipiscing vitae proin.
-
-Scelerisque mauris pellentesque pulvinar pellentesque. Tincidunt lobortis feugiat vivamus at augue. Dolor morbi non arcu risus quis varius. Ultricies lacus sed turpis tincidunt. Laoreet non curabitur gravida arcu ac. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Consequat semper viverra nam libero justo. Amet facilisis magna etiam tempor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Dictum sit amet justo donec. Imperdiet proin fermentum leo vel orci porta. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit. Ut ornare lectus sit amet est placerat. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Urna et pharetra pharetra massa. Lectus quam id leo in vitae turpis massa sed. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Quam adipiscing vitae proin sagittis nisl rhoncus. At quis risus sed vulputate odio ut enim blandit. Non curabitur gravida arcu ac tortor dignissim convallis aenean.
-
-Arcu dictum varius duis at consectetur lorem donec massa. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Nec tincidunt praesent semper feugiat nibh. Quis ipsum suspendisse ultrices gravida dictum. In eu mi bibendum neque egestas. Eu scelerisque felis imperdiet proin fermentum leo vel. Lectus proin nibh nisl condimentum id. Sit amet nisl suscipit adipiscing bibendum est ultricies. Elementum nisi quis eleifend quam adipiscing vitae proin. Faucibus nisl tincidunt eget nullam non nisi est. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Aliquam id diam maecenas ultricies mi eget. Accumsan lacus vel facilisis volutpat. A diam maecenas sed enim ut. Sem integer vitae justo eget magna fermentum iaculis eu. In massa tempor nec feugiat nisl pretium fusce. Interdum varius sit amet mattis. Varius quam quisque id diam vel quam elementum pulvinar.
-
-Elit pellentesque habitant morbi tristique senectus. Arcu non sodales neque sodales ut. Egestas tellus rutrum tellus pellentesque. Nisi porta lorem mollis aliquam ut. Adipiscing enim eu turpis egestas pretium aenean pharetra. Dolor magna eget est lorem. Donec massa sapien faucibus et molestie ac. Aliquet sagittis id consectetur purus ut faucibus. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Aliquet porttitor lacus luctus accumsan. Quam quisque id diam vel quam elementum pulvinar etiam non. Purus in mollis nunc sed id semper. Vitae sapien pellentesque habitant morbi tristique. Ultrices gravida dictum fusce ut placerat orci nulla. Facilisis volutpat est velit egestas dui id.
-    </>)
+        <ListItem sx={{ display: "list-item" }}>
+          Responsible for architecture, development and integration of
+          greenfield initiative to migrate lightweight version of Bloomberg’s
+          instant messenger to the web
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Developed a secure websocket server that consumed a Kafka topic to
+          send messages to a React client
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Created and led development on Bloomberg’s first browser-based logging
+          tool for web clients, later adopted as recommended logging tool for
+          web applications according to Bloomberg’s Web DevX Working Group
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Mentored a new hire and guided them through improvements to
+          high-visibility application with proprietary JS library frontend and
+          C++ backend
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Assumed ownership of Bloomberg Terminal application OAS1 and
+          overhauled its interface and functionality by improving or, where
+          necessary, fixing features and UI related to single and multi-path
+          structured product cashflow analytics
+        </ListItem>
+        {/* Cedrus */}
+        <ListItem sx={{ display: "list-item" }}>
+          Wrote Node.js scripts to leverage AWS DMS in migrating data from
+          Oracle DB to AWS DynamoDB and MySQL RDS
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Overhauled legacy Angular frontend to updated Angular 2, adding
+          (submodules, lazy loading, and reusable components{" "}
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Created GraphQL API with AWS Appsync to interact with microservices
+        </ListItem>
+        <ListItem sx={{ display: "list-item" }}>
+          Implemented Apache Kafka to increase data durability and throughput of
+          microservice architecture
+        </ListItem>
+      </List>
+    </>
+  );
 }
