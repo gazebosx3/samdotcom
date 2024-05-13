@@ -4,7 +4,7 @@ import Home from "./Home";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function App() {
-  let location = useLocation();
+  const location = useLocation();
   const isHome = location.pathname === "/";
   const matches = useMediaQuery("(min-width:600px)");
 

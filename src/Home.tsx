@@ -1,8 +1,6 @@
-import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Button, useMediaQuery } from "@mui/material";
-import Slide from "@mui/material/Slide";
 import { Link } from "react-router-dom";
 
 type HomeProps = { isHome: boolean };

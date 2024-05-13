@@ -1,5 +1,4 @@
 import { List, ListItem } from "@mui/material";
-import Typography from "@mui/material/Typography";
 
 export default function Experience() {
   return (
