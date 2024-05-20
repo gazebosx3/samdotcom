@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Button, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 
 type HomeProps = { isHome: boolean };
 
@@ -54,13 +54,25 @@ export default function Home({ isHome }: HomeProps) {
         </div>
       </Box>
       {!isHome && matches && (
-        <section>
-          {"ok "}
-          <div className="air air1"></div>
-          <div className="air air2"></div>
-          <div className="air air3"></div>
-          <div className="air air4"></div>
-        </section>
+        <div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+          <div className="firefly"></div>
+        </div>
       )}
     </div>
   );

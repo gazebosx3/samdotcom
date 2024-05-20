@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { Outlet, useLocation } from "react-router-dom";
 import Home from "./Home";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -21,6 +21,27 @@ function App() {
         <div style={matches ? { maxWidth: "50%" } : {}}>
           <Outlet />
         </div>
+        {isHome && (
+          <div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+            <div className="firefly"></div>
+          </div>
+        )}
       </div>
     </>
   );
