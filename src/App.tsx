@@ -15,7 +15,7 @@ function App() {
           matches ? { display: "flex", justifyContent: "space-between" } : {}
         }
       >
-        <div style={{ position: "sticky" }}>
+        <div style={{ position: "sticky", zIndex: 99999 }}>
           <Home isHome={isHome} />
         </div>
         <div style={matches ? { maxWidth: "50%" } : {}}>

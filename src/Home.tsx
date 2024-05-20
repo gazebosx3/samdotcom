@@ -24,7 +24,7 @@ export default function Home({ isHome }: HomeProps) {
               I'm a software engineer who enjoys talking to people
             </Typography>
             <Typography variant="h6" gutterBottom>
-              🖥️🙇🏻🏙️
+              🖥️
             </Typography>
             <br />
             <br />
