@@ -2,16 +2,15 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Button, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./App.css";
 
 type HomeProps = { isHome: boolean };
-// easing={'ease-out'}
-//       {/* <Slide direction="left"  timeout={1500} in={true} mountOnEnter unmountOnExit> */}
 
 export default function Home({ isHome }: HomeProps) {
-    const matches = useMediaQuery('(min-width:600px)');
+  const matches = useMediaQuery("(min-width:600px)");
 
   return (
-    <div style={ !isHome && matches ? {position: 'fixed', top: 10}: {}}>
+    <div style={!isHome && matches ? { position: "fixed", top: 10 } : {}}>
       <Box sx={{ width: "100%", maxWidth: 500 }}>
         <Link style={{ color: "#213547" }} to={"/"}>
           <Typography variant={isHome ? "h1" : "h3"} gutterBottom>
@@ -36,13 +35,33 @@ export default function Home({ isHome }: HomeProps) {
         )}
         <div>
           <Link to={"About"}>
-            <Button>About</Button>
+            <button className="white-font">About</button>
           </Link>
-          <Link to={"Experience"}>
-            <Button>Experience</Button>
-          </Link>
+          <a
+            href="../public/GlassSamuelResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="white-font"> Resume</button>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sam-glass/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="white-font"> LinkedIn</button>
+          </a>
         </div>
       </Box>
+      {!isHome && matches && (
+        <section>
+          {"ok "}
+          <div className="air air1"></div>
+          <div className="air air2"></div>
+          <div className="air air3"></div>
+          <div className="air air4"></div>
+        </section>
+      )}
     </div>
   );
 }
