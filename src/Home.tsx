@@ -38,7 +38,7 @@ export default function Home({ isHome }: HomeProps) {
             <button className="white-font">About</button>
           </Link>
           <a
-            href="../public/GlassSamuelResume.pdf"
+            href="../GlassSamuelResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
