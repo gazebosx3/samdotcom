@@ -7,7 +7,7 @@ import "./App.scss";
 type HomeProps = { isHome: boolean };
 
 export default function Home({ isHome }: HomeProps) {
-  const matches = useMediaQuery("(min-width:600px)");
+  const matches = useMediaQuery("(min-width:845px)");
 
   return (
     <div style={!isHome && matches ? { position: "fixed", top: 10 } : {}}>
