@@ -16,6 +16,8 @@
     "@mui/material": "^5.15.16",
     "@reduxjs/toolkit": "^2.2.3",
     "@uidotdev/usehooks": "^2.4.1",
+    "flubber": "^0.4.2",
+    "framer-motion": "^11.2.6",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",

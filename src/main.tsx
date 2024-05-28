@@ -9,14 +9,12 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import "./index.css";
-import Experience from "./Experience.tsx";
 import About from "./About.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<App />} path="/">
       <Route element={<About />} path="About" />
-      <Route element={<Experience />} path="Experience" />
     </Route>
   )
 );
