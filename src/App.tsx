@@ -20,30 +20,30 @@ function App() {
       >
         <div style={ !isHome ? {marginLeft: '50px'} : {}}>
           <Home isHome={isHome} />
-          {!isHome && matches && <div style={{marginTop: '150px', marginLeft: '28px', position: 'fixed'}}><img src="../atthepark-smaller.png" /></div>}
+          {!isHome && matches && <div style={{marginTop: '150px', marginLeft: '28px', position: 'fixed'}}><img src="../atthepark-smaller.png" alt="Sam and his cute toddler drinking coffee" /></div>}
         </div>
         <div style={matches ? { maxWidth: "50%" } : {}}>
           <Outlet />
         </div>
         {isHome && (
           <div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
+            <div aria-label="flickering firefly" className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
+            <div aria-label="flickering firefly"  className="firefly"></div>
           </div>
         )}
       </div>
