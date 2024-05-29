@@ -23,15 +23,6 @@ export default function Home({ isHome }: HomeProps) {
             <Typography variant="h6" gutterBottom>
               I'm a software engineer who enjoys talking to people
             </Typography>
-            {/* <img src="../atthepark.png" /> */}
-            {/* <Typography variant="h6" gutterBottom>
-              🖥️
-            </Typography> */}
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
           </div>
         )}
         <div>
