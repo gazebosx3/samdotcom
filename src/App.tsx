@@ -2,6 +2,7 @@ import "./App.scss";
 import { Outlet, useLocation } from "react-router-dom";
 import Home from "./Home";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import CustomCursor from "./customCursor";
 
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
         style={
           matches ? { display: "flex", justifyContent: "space-between" } : {}
         }
-      >
+      >      
+      <CustomCursor />
+
         <div style={ !isHome ? {marginLeft: '50px'} : {}}>
           <Home isHome={isHome} />
           {!isHome && matches && <div style={{marginTop: '150px', marginLeft: '28px', position: 'fixed'}}><img src="../atthepark-smaller.png" alt="Sam and his cute toddler drinking coffee" /></div>}

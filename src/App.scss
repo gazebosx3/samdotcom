@@ -1,11 +1,27 @@
 @use 'sass:math';
 
 
+.custom-cursor { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 40px; 
+  height: 40px; 
+  background-color: #ffffff; 
+  border-radius: 50%; 
+  mix-blend-mode: difference; /* This is used to create the glowing effect */ 
+  pointer-events: none; /* This allows the cursor to pass through to the elements behind it */ 
+  z-index: 9999; /* Ensure it's above other elements on the page */ 
+  // transition: transform 0.1s ease; /* Add a smooth transition for movement */ 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Create the glowing effect using box-shadow */ 
+} 
+
 *{
   margin: 0;
   padding: 0;
   background: black;
   color: #fdf0d5;
+  cursor: none !important;
 }
 
 .box {
